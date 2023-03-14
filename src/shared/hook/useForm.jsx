@@ -5,7 +5,7 @@ const useForm = ({ initialState, onSubmit }) => {
     const [state, setState] = useState({ ...initialState });
 
    const handleChange = useCallback(({target}) => {
-        const {name, value} = target;
+       const { name, value } = target;
         setState(prevState => {
             return {...prevState, [name]: value}
         })
