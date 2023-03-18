@@ -2,7 +2,7 @@ import { useState } from "react";
 import InitialState from './initialState.js';
 import css from './ContactForm.module.css';
 import { useDispatch, useSelector } from "react-redux";
-import { addContact } from "../../redux/operations";
+import { addContact } from "../../redux/contacts/operations";
 import { selectContacts } from "redux/selector.js";
 const ContactForm = () => {
     const dispatch = useDispatch();
@@ -19,7 +19,7 @@ const ContactForm = () => {
             alert(name + ' is already in contacts');
             return;
         }
-        dispatch(addContact({ name: name, phone: number }));
+        dispatch(addContact({ name: name, number: number }));
         form.reset();
     }
 
@@ -31,7 +31,7 @@ const ContactForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={css.wrapInput}>
             <label>Name </label>
                     <input className={css.input}
                     type="text"

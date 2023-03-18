@@ -1,0 +1,17 @@
+.wrap {
+    display: flex;
+}
+
+.btn {
+    border-radius: 9px;
+    font-size: 12px;
+    padding: 7px 11px;
+    background-color: white;
+    border: 1px solid rgb(99, 97, 97);
+    margin-left: 10px;
+    padding: 5px;
+}
+.btn:hover {
+    background-color: #3f51b5;
+    color: white;
+}

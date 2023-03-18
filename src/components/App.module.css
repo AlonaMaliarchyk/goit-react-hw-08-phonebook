@@ -1,6 +1,11 @@
-.wrap {
-    padding: 40px;
-    text-align: center;
+.container {
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../assets/istockphoto-1423607004-170667a.jpg);
 }
 
 ul {
@@ -14,21 +19,14 @@ li {
     padding: 0;
 }
 
-div {
+/* div {
     display: inline-block;
     text-align: start;
-}
+} */
 
 
 svg {
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
-}
-
-.spinner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }

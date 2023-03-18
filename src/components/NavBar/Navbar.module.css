@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(217, 214, 214);
+}
+
+.wrapNav {
+    display: flex;
+}
+
+.wrapUser {
+    display: flex;
+}
+
+.list {
+    display: flex;
+  font-size: 20px;
+}
+
+.item {
+    margin-left: 20px;
+}
+
+.wrapAuth {
+    display: flex;
+    font-size: 20px;
+}
+

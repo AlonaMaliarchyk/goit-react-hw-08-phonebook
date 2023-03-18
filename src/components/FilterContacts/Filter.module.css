@@ -1,11 +1,19 @@
 .input {
     margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+    outline: 1px solid rgb(99, 97, 97) ;
+    color:rgb(99, 97, 97);
+    font-size: 15px;
+    color:#616994
+
 }
 
-input,
+/* input,
 input:hover {
-    outline: none;
-}
+    outline: #3f51b5;
+} */
 
 .filterWrap {
     display: block;

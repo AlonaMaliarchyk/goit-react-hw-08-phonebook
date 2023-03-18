@@ -1,6 +1,6 @@
-const InitialState = {
-    name: "eeee",
-    email: "ccc",
-    password: "8888",
+const initialState = {
+    name: "",
+    email: "",
+    password: "",
 }
-export default InitialState;
+export default initialState;

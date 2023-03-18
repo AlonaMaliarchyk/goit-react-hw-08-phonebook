@@ -1,0 +1,10 @@
+.text{
+    
+    color: #616994;
+    display: flex;
+    margin-bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* background-image: linear-gradient(to right ,#553c9a, #ee4b2b, #00c2cb, #ff7f50, #553c9a);
+    animation: animated-gradient 2s infinite alternate-reverse;   */
+}

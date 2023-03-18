@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ContactItem from "../ContactItem";
-import { fetchContacts } from "../../redux/operations";
-import { selectFilteredContacts } from "redux/selector";
+import { fetchContacts } from "../../redux/contacts/operations";
+import {  selectFilteredContacts } from 'redux/selector';
 
 const ContactList = () => {
+    const contacts = useSelector(selectFilteredContacts);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -13,18 +14,19 @@ const ContactList = () => {
         [dispatch]
     );
 
-    const contacts = useSelector(selectFilteredContacts);
     return (
     <div>
-        <ol>
+        <table>
+          <tbody>
             {contacts.map((contact) => (
                 <ContactItem
                     key={contact.id}
                     id={contact.id}
                     name={contact.name}
-                    number={contact.phone} />
+                    number={contact.number} />
             ))}
-        </ol>
+          </tbody>
+        </table>
     </div>
     )
 }

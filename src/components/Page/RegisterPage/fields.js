@@ -1,5 +1,6 @@
 const fields = {
   name: {
+    icon: 'user',
     type: 'text',
     name: 'name',
     required: true,
@@ -7,6 +8,7 @@ const fields = {
     placeholder: 'User name',
   },
   email: {
+    icon: 'envelope outline',
     type: 'email',
     name: 'email',
     required: true,
@@ -14,6 +16,7 @@ const fields = {
     placeholder: 'User email',
   },
   password: {
+    icon: 'lock',
     type: 'password',
     name: 'password',
     required: true,

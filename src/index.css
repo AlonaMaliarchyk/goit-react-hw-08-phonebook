@@ -8,16 +8,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  font-style: normal;
+  color: #616994;
+  background-color: rgb(217, 214, 214);
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    font-size: 20px;
 }
 
 ul,
 li,
 a {
   text-decoration: none;
-  color: black;
+  /* color: rgb(99, 97, 97); */
+}
+
+hr {
+  margin: 0;
+}
+
+label{
+  font-size: 20px;
+  color:#616994;
 }

@@ -1,7 +1,8 @@
+import css from "./HomePage.module.css" ;
 const HomePage = () => {
     return (
         <>
-            <p>Welcome to Book Contacts</p>
+            <h1 className={css.text}>Welcome to Book Contacts</h1>
     </>
     )
 }
